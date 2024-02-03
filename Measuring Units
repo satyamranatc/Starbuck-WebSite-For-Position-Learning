@@ -1,0 +1,96 @@
+Fixed Units:
+
+Pixels (px):
+
+Category: Fixed
+Usage: Absolute unit, provides a fixed size regardless of the context.
+Points (pt):
+
+Category: Fixed
+Usage: Absolute unit commonly used in print styling, 1pt is equal to 1/72 inch.
+Picas (pc):
+
+Category: Fixed
+Usage: Rarely used, 1pc is equal to 12 points.
+Millimeters (mm):
+
+Category: Fixed
+Usage: Absolute unit representing a fixed size in millimeters.
+Inches (in):
+
+Category: Fixed
+Usage: Absolute unit representing a fixed size in inches.
+Relative Units:
+
+Em (em):
+
+Category: Relative
+Usage: Relative unit, size is based on the font-size of the parent or the element itself.
+Rem (rem):
+
+Category: Relative
+Usage: Relative unit, size is based on the font-size of the root (usually the <html>) element.
+Percentage (%):
+
+Category: Relative
+Usage: Relative unit, size is a percentage of the parent element.
+Viewport Width (vw) and Viewport Height (vh):
+
+Category: Relative
+Usage: Relative unit, size is a percentage of the viewport width or height.
+Viewport Minimum (vmin) and Viewport Maximum (vmax):
+
+Category: Relative
+Usage: Relative unit, vmin is based on the smaller of the viewport's height and width, and vmax is based on the larger.
+
+
+-----------------------------------------------
+Code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="./Demo.css">
+</head>
+<body>
+
+
+    <div id="Main">
+        Hello
+    </div>
+
+  
+</body>
+</html>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: sans-serif;
+  background-color: rgb(223, 222, 222);
+}
+
+
+
+#Main
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10pc auto;
+    height: 200px;
+
+    width: 25vmin;
+    font-size: 2vmin;
+
+    background-color: teal;
+}
